@@ -1,0 +1,388 @@
+/* Criar um  header para desktop */
+/* site www.ghosttech.com.br */
+/* Autor: Marcos Dias */
+/* Instagram: @_ghosttech */
+/* Data: 09/08/2022 */
+/* Versão: 1.0 */
+/* Licença: MIT */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
+/* navbar desktop*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+:root {
+    --clr: rgb(0, 0, 0);
+    --clr-purple: #701CEB;
+    --clr-gray: rgb(37, 37, 37);
+    --clr-white: rgb(255, 255, 255);
+    --clr-blue: #348bee;
+    --clr-blue-shadow:#1b7be9;
+    --clr-ghosttech: #1f0794;
+    --clr-ghosttech-light: #020142;
+    --clr-ghosttech-cinzento: #afafb8;
+}
+body {
+      min-height: 100vh;
+      background: var(--clr-white);
+      width: 100%;
+  }
+  .nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: var(--clr-ghosttech);
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+  }
+  .nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;  
+      padding: 0 20px;
+      margin: 20px 0;
+      color: var(--clr-white);
+      text-decoration: none;
+  }
+  .nav ul li a:hover {
+    background: var(--clr-blue);
+    border-radius: 10px;
+    transition: 0.7s;
+    transform: translateY(15px);
+    padding-top: 10px;
+  }
+  .nav ul li a .icon {
+    padding: 5px;
+}
+.nav img {
+    transform: translateY(38px);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.nav-mobile {
+    display: none;
+}
+/* header */
+.container{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  max-width: auto;
+  align-content: center;
+  padding-top: 5%;
+    background: var(--clr-ghosttech-light);
+}
+.container h1{
+    font-size: 50px;
+    color: var(--clr-white);
+    font-weight: bold;
+    text-align: center;
+    transition-duration: 0.9s;
+    transition-property: all;
+}
+.container h2 {
+    font-size: 20px;
+    color: var(--clr-ghosttech-cinzento);
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.9s;
+    transition-property: all;
+    padding: 20px;
+}
+.container a{ /* link */
+    font-size: 20px;
+    color: var(--clr-white);
+    font-weight: regular;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    transition-duration: 0.9s;
+    width: 100%;
+}
+.btn-header .text{ /* color bottom*/
+  border-radius: 10px;
+  padding: 8px;
+  color: var(--clr-white);;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.9s;
+  width: 70%;
+  background-color: var(--clr-blue);
+  box-shadow: var(--clr-blue-shadow) 0px 0px 10px;
+}
+.btn-header-2 .text{ /* color bottom*/
+  border-radius: 10px;
+  padding: 8px;
+  color: var(--clr-white);;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.9s;
+  width: 70%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container a:hover {
+    color: var(--clr-white);
+}
+.span-1{
+    width: 100%;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.span-2{
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    background: var(--clr-blue);
+    color: var(--clr-white);
+    font-weight: bold;
+    box-shadow: var(--clr-blue-shadow) 0px 0px 20px;
+}
+/* header the end*/
+/* navbar mobile */
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: var(--clr-ghosttech-light);
+  width: 100%;
+}
+
+/* header mobile*/
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--clr-ghosttech-light);
+}
+/* header mobile the end*/
+.nav-mobile {
+  width: 400px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: var(--clr-white);
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+}
+.nav-mobile ul {
+  display: flex;
+  width: 350px;
+}
+.nav-mobile ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.nav-mobile ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;   
+}
+.nav-mobile ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr-ghosttech);
+}
+.nav-mobile ul li.active a .icon {
+    transform: translateY(-32px);
+    color: var(--clr-white);
+}
+.nav-mobile ul li a .text {
+    position: absolute;
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    color: var(-clr-gray);
+    opacity: 0;
+    transform: translateY(20px);
+}
+.nav-mobile ul li.active a .text {
+    transform: translateY(10px);
+    opacity: 1;
+    color: var(--clr);
+}
+.indicador{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: var(--clr-blue);
+    border-radius: 50%;
+    border: 6px solid var(--clr-ghosttech-light);
+    transition: 0.5s;
+}
+.indicador::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 var(--clr-ghosttech-light);
+}
+.indicador::after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 var(--clr-ghosttech-light);
+}
+.nav-mobile ul li:nth-child(1).active ~ .indicador {
+    transform: translateX(calc(70px * 0));
+}
+.nav-mobile ul li:nth-child(2).active ~ .indicador {
+    transform: translateX(calc(70px * 1));
+}
+.nav-mobile ul li:nth-child(3).active ~ .indicador {
+    transform: translateX(calc(70px * 2));
+}
+.nav-mobile ul li:nth-child(4).active ~ .indicador {
+    transform: translateX(calc(70px * 3));
+}
+.nav-mobile ul li:nth-child(5).active ~ .indicador {
+    transform: translateX(calc(70px * 4));
+}
+}
+/* navbar tablet */
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: var(--clr-white);
+  }
+  .container {
+    margin: 0;
+    padding-top: 20vh;
+    height: 160vh;
+    flex-wrap: wrap;
+  }
+  .nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: var(--clr-ghosttech);
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+  }
+  .nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 100%;
+      text-align: center;
+      font-weight: 500;  
+      padding: 0 20px;
+      margin: 20px 0;
+      color: var(--clr-white);
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+  }
+  .nav ul li a:hover {
+    background: var(--clr-blue);
+    border-radius: 10px;
+    transition: 0.7s;
+    transform: translateY(15px);
+    padding-top: 10px;
+  }
+  .nav ul li a .icon {
+    padding: 5px;
+}
+.nav img {
+    display: none;
+}
+.nav-mobile {
+    display: none;
+}
+}
