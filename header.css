@@ -13,6 +13,9 @@
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
     --clr: rgb(0, 0, 0);
     --clr-purple: #701CEB;
@@ -21,6 +24,7 @@
     --clr-blue: #348bee;
     --clr-blue-shadow:#1b7be9;
     --clr-ghosttech: #1f0794;
+    --clr-sections: #2c159e;
     --clr-ghosttech-light: #020142;
     --clr-ghosttech-cinzento: #afafb8;
 }
@@ -91,7 +95,7 @@ body {
   align-items: center;
   max-width: auto;
   align-content: center;
-  padding-top: 5%;
+  padding-top: 10%;
     background: var(--clr-ghosttech-light);
 }
 .container h1{
