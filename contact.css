@@ -17,13 +17,13 @@
     --clr-purple: #701CEB;
     --clr-gray: rgb(37, 37, 37);
     --clr-white: rgb(255, 255, 255);
-    --clr-blue: #348bee;
-    --clr-blue-shadow:#1b7be9;
-    --clr-ghosttech: #1f0794;
-    --clr-ghosttech-light: #020142;
+    
     --clr-ghosttech-cinzento: #afafb8;
     --clr-ghosttech-checked: #3bf727;
-    --clr-ghosttech-input-sucess: #4ECA64;
+    --clr-ghostt--clr-blue: #348bee;
+    --clr-blue-shadow:#1b7be9;
+    --clr-ghosttech: #1f0794;
+    --clr-ghosttech-light: #020142;ech-input-sucess: #4ECA64;
     --clr-xcheck-erro: #f21b1b;
     --clr-erro-input: #DB5A5A;
     --clr-form-bg: #fcfbff0e;
